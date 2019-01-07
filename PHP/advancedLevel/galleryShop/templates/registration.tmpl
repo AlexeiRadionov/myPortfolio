@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<form class="registration" method="POST">
+		<p>
+			<label for="login">Введите логин:</label><input id="login" type="text" name="login" required>
+		</p>
+		<p>
+			<label for="pass">Введите пароль:</label><input id="pass" type="password" name="pass" required>
+		</p>
+		<p>
+			<label for="email">Введите e-mail:</label><input id="email" type="text" name="email" required>
+		</p>
+		<input type="submit" name="sendForm">
+	</form>
+	
+	{% if error == 1 %}
+		{% include 'registration_item.tmpl' %}
+	{% endif %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<p>Товар №: {{goodInfo.id_image}}</p>
+<div class="good" data-id="{{goodInfo.id_image}}">
+	<img src="../../img/small/{{goodInfo.path_img}}">
+	<p>Количество просмотров: {{goodInfo.count_preview}}</p>
+	<p class="description">{{goodInfo.description}}</p>
+	<p class="price">Цена: {{goodInfo.price}} рублей за 1шт.</p>
+</div>
+<hr>
+
+<div class="form">
+	<h3>Редактировать товар:</h3>
+	<p><label for="price">Введите цену товара:</label>
+	<input id="price" type="text" class="goodInfo"></p>
+	<p>Введите описание товара:</p>
+	<textarea id="description" rows="10" cols="60" class="goodInfo"></textarea>
+	<p><button class="edit">Редактировать</button></p>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+</head>
+<body>
+	<form action="calc.php">
+		<input required type="text" name="val1" placeholder="Введите первое число">
+		<input required type="text" name="val2" placeholder="Введите второе число">
+		
+		<p>Выберите тип операции</p>
+		<div style="margin-bottom: 20px;">
+			<input type="submit" name="operation[]" value="+">
+			<input type="submit" name="operation[]" value="-">
+			<input type="submit" name="operation[]" value="/">
+			<input type="submit" name="operation[]" value="*">
+		</div>
+	</form>
+</body>
+</html>

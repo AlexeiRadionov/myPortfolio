@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Изображение</title>
+	<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+	<div class="registr">
+		<a href="/registration/?back={{back_url}}">Регистрация</a>
+		<a href="/account/?back={{back_url}}">Личный кабинет</a>
+	</div>
+	
+	<div class="auth">
+		{% if auth == '' %}
+			{% include 'login_item.tmpl' %}
+		{% else %}
+			{% include 'logout_item.tmpl' %}
+		{% endif %}
+	</div>
+	
+	<div class="image">
+		<img src="../img/big/{{image.path_img}}">
+		<p>Просмотров: {{countPreview}}</p>
+		<hr>
+		<h2>Описание товара</h2>
+		<p>{{image.description}}</p>
+		<p>Цена: {{image.price}} рублей</p>
+		<button class="buy" id="{{image.id_image}}">Добавить в корзину</button>
+		<a id="myBasket" href="../basket/"><button>Ваша корзина ({{countProduct}})</button></a>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/engine.js" type="text/javascript"></script>
+</body>
+</html>

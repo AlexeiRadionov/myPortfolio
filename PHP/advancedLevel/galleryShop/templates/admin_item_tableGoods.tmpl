@@ -1,0 +1,23 @@
+<table class="goods">
+	<tr>
+		<th>id товара</th>
+		<th>Путь до картинки товара</th>
+		<th>Количество просмотров</th>
+		<th>Описание товара</th>
+		<th>Цена за 1 шт.</th>
+	</tr>
+	{% include 'admin_item_goods.tmpl' %}
+</table>
+
+<div class="form">
+	<h3>Добавить товар:</h3>
+	<p><label for="path">Введите путь до картинки:</label>
+	<input id="path" type="text" class="goodInfo"></p>
+	<p><label for="count_preview">Введите количество просмотров:</label>
+	<input id="count_preview" type="text" class="goodInfo"></p>
+	<p><label for="price">Введите цену товара:</label>
+	<input id="price" type="text" class="goodInfo"></p>
+	<p>Введите описание товара:</p>
+	<textarea id="description" rows="10" cols="60" class="goodInfo"></textarea>
+	<p><button class="addGood">Добавить товар</button></p>
+</div>

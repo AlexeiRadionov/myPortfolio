@@ -1,0 +1,12 @@
+{% for item in catalog %}
+	<div data-id="{{item.id_image}}">
+		<img src="../../img/small/{{item.path_img}}">
+		<p>{{item.description}}</p>
+		<p>Цена: {{item.price}} рублей за 1шт.</p>
+		<form action="/image/" method="GET" target='_blank'>
+			<input type="hidden" name="id" value='{{item.id_image}}'>
+			<button>Подробнее</button>
+		</form>
+		<hr>
+	</div>
+{% endfor %}

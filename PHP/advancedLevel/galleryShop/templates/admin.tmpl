@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin</title>
+	<link rel="stylesheet" href="../../css/style_admin.css">
+</head>
+<body>
+	<div class="admin">
+		{% include 'admin_item_logout.tmpl' %}
+		
+		{% if action == 'order' %}
+			<p>Заказ №: {{id_order}}</p>
+			<hr>
+			{% include 'admin_item_orderInfo.tmpl' %}
+		{% elseif action == 'goods' %}
+			<nav>
+				<a href="/admin/">Заказы</a>
+				<span>Товары</span>
+			</nav>
+			<div class="table_goods">
+				{% include 'admin_item_tableGoods.tmpl' %}
+			</div>
+		{% elseif action == 'good' %}
+			{% include 'admin_item_goodInfo.tmpl' %}
+		{% else %}
+			<nav>
+				<span>Заказы</span>
+				<a href="goods/">Товары</a>
+			</nav>
+			<div class="table_orders">
+				{% include 'admin_item_tableOrders.tmpl' %}
+			</div>
+		{% endif %}
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/engine.js" type="text/javascript"></script>
+</body>
+</html>

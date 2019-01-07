@@ -1,0 +1,10 @@
+{% for item in orderInfo %}
+	<p>Товар №: {{item.id_image}}</p>
+	<div class="order" data-id="{{item.id_product}}">
+		<img src="../../img/small/{{item.path_img}}">
+		<p>{{item.description}}</p>
+		<p data-id="{{item.id_product}}">Количество: {{item.quantity}} </p>
+		<p>Цена: {{item.price}} рублей за 1шт.</p>
+	</div>
+	<hr>
+{% endfor %}

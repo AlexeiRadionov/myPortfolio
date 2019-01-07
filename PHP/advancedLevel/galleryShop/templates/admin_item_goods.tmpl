@@ -1,0 +1,9 @@
+{% for item in goods %}
+	<tr>
+		<td><a href="/admin/good/?id={{item.id_image}}" title="Редактировать">{{item.id_image}}</a></td>
+		<td>{{item.path_img}}</td>
+		<td>{{item.count_preview}}</td>
+		<td>{{item.description}}</td>
+		<td>{{item.price}}</td>
+	</tr>
+{% endfor %}

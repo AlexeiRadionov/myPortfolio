@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Account</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="account">
+		{% if auth == '' %}
+			{% include 'login_item.tmpl' %}
+			<p>Необходимо войти в систему</p>
+		{% else %}
+			{% include 'account_item.tmpl' %}
+			<p>Ваши заказы:</p>
+			
+			<div class="orders">
+				{% if goods == 'Пока у вас нет ни одного заказа' %}
+					<p>{{goods}}</p>
+				{% else %}
+					{% include 'account_item_orders.tmpl' %}
+				{% endif %}
+			</div>
+		{% endif %}
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<table>
+	<tr>
+		<th>Выбрать</th>
+		<th>№ заказа</th>
+		<th>id пользователя</th>
+		<th>Контакты пользователя</th>
+		<th>Дата заказа</th>
+		<th>Количество товаров в заказе, шт</th>
+		<th>Сумма заказа, руб.</th>
+		<th>Статус заказа</th>
+	</tr>
+	{% include 'admin_item_orders.tmpl' %}
+</table>
+
+<p>Изменить статус заказа:
+<select class="select">
+	<option value="В обработке">В обработке</option>
+	<option value="Принят в работу">Принят в работу</option>
+	<option value="Отправлен">Отправлен</option>
+	<option value="Доставлен">Доставлен</option>
+	<option value="Завершён">Завершён</option>
+	<option value="Отменён">Отменён</option>
+</select>
+</p>
+<button class="changeStatus">Применить</button>

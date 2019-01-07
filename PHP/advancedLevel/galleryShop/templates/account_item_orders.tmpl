@@ -1,0 +1,17 @@
+{% for itemOrder in infoOrders %}
+	<p>Заказ №: {{itemOrder.id_order}}</p>
+	{% for item in goods %}
+		{% if itemOrder.id_order == item.id_order %}
+			<div class="item" data-id="{{item.id_product}}">
+				<img src="../../img/small/{{item.path_img}}">
+				<p>{{item.description}}</p>
+				<p data-id="{{item.id_product}}">Количество: {{item.quantity}} </p>
+				<p>Цена: {{item.price}} рублей за 1шт.</p>
+			</div>
+		{% endif %}
+	{% endfor %}
+	<hr>
+	<p class="status">Статус заказа: {{itemOrder.status}}</p>
+	<p class="count">Всего товаров в заказе: {{itemOrder.count}}</p>
+	<p class="amount">Общая сумма заказа: {{itemOrder.amount}}</p>
+{% endfor %}

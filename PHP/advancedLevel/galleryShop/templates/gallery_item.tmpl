@@ -1,0 +1,5 @@
+{% for item in images %}
+	<form action="image/" method="GET" target="_blank">
+		<button name='id' value='{{item.id_image}}' class='photo'><img src='img/small/{{item.path_img}}' width='150' height='100'></button>
+	</form>
+{% endfor %}

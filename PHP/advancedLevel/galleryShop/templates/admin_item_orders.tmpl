@@ -1,0 +1,12 @@
+{% for item in orders %}
+	<tr>
+		<td><input class="checkbox" type="checkbox" data-id="{{item.id_order}}"></td>
+		<td><a href="order/?id={{item.id_order}}" title="Подробности заказа">{{item.id_order}}</a></td>
+		<td>{{item.id_user}}</td>
+		<td>{{item.email}}</td>
+		<td>{{item.date}}</td>
+		<td>{{item.count}}</td>
+		<td>{{item.amount}}</td>
+		<td class="status{{item.id_order}}">{{item.status}}</td>
+	</tr>
+{% endfor %}

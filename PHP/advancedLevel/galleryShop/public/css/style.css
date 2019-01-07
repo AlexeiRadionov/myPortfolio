@@ -1,0 +1,112 @@
+body {
+	background: #444 url('../img/body.jpg'); 
+	color: #444;
+	font: normal 1.2em Verdana,Arial,sans-serif;
+	height: 100%;
+	padding: 20px;
+}
+body p {
+	color: #fff;
+}
+button {
+	cursor: pointer;
+	padding: 0;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+button.photo {
+	margin:5px;
+}
+.gallery img {
+	border:3px solid #fff;
+}
+button.photo:hover img{
+	border:3px solid #034F80;
+}
+#main {
+	width:858px;
+	margin:0 auto;
+	background: #4A4A4A; 
+	color: #CCC;
+}
+#main a.catalog {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	width: 250px;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background: #fff;
+	text-align: center;
+	line-height: 40px;
+}
+#main a.catalog:hover {
+	background: lightgray;
+}
+.post_title h2 {
+	font: normal 2em Arial,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+a:hover img {
+	border:3px solid #034F80;
+}
+.image {
+	width: 800px;
+	margin:0 auto;
+	color: #fff;
+}
+.feedback {
+	padding: 20px;
+}
+.goods {
+	color: #fff;
+}
+.auth {
+	color: #fff;
+	width:800px;
+	margin:20px auto;
+}
+.auth a {
+	color: red;
+}
+.registr {
+	display: flex;
+	justify-content: flex-end;
+	width:1100px;
+	margin:0 auto;
+}
+.registr a {
+	color: #fff;
+	margin: 0 10px;
+}
+form.registration {
+	width: 400px;
+}
+.registration p {
+	display: flex;
+}
+.registration input {
+	flex-grow: 1;
+}
+.registration label {
+	margin-right: 10px;
+}
+.account a {
+	color: red;
+}
+.account {
+	color: #fff;
+}
+.orders {
+	border: 1px solid #fff;
+	padding: 20px;
+}
+.count, .amount, .status {
+	text-align: right;
+	margin-right: 20px;
+}
