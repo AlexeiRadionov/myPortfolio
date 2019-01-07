@@ -1,0 +1,11 @@
+.b-footerInside {
+	background-color: #5e5e5e;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+}
+
+.b-footerInside__copyright {
+	font-size: 18px;
+	color: #fff;
+}

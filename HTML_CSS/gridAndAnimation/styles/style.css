@@ -1,0 +1,621 @@
+/* ---------- НАЧАЛО описания общих стилей для страницы, header, footer -----------*/
+
+/*Общие стили для страницы*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: georgia;
+	src: url('../fonts/georgia.ttf');
+}
+
+.container { 
+	max-width: 1000px;                   	/*{*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 0 5px;
+	font-family: georgia, sans-serif;
+	font-weight: 400;
+}                               		/*Прижимаем футер к низу экрана*/
+
+#header_contentMain {
+	flex: 1;
+}                               		/*}*/
+
+/*Стили для header*/
+
+#headerInside {
+	min-height: 190px;
+	padding: 20px 20px 0;
+	background-color: #ebebeb;
+	position: relative;
+}
+
+#Name_form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 9px 0;
+	padding: 10px 0;
+}
+
+#Name {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+#Name_form h1 {
+	color: #333333;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: left;
+}
+
+#Name_form p {
+	color: #999999;
+	font-size: 12px;
+	line-height: 15.6px;
+	text-align: left;
+	width: 102px;
+	height: 28px;
+	border-left: 1px solid #999999;
+	margin: 0 10px;
+	padding: 10px 10px 0;
+}
+
+#Name_form form {
+	margin: 3px 0;
+}
+
+#Name_form input[type="text"] {
+	width: 200px;
+	height: 23px;
+	background-color: #ffffff;
+	color: #999999;
+	font-size: 12px;
+	line-height: 14.4px;
+	text-align: left;
+	padding: 5px;
+	border: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	position: relative;
+	left: 5px;
+}
+
+#Name_form input[type="submit"] {
+	width: 75px;
+	height: 33px;
+	background-color: #97455f;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 14.4px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px;
+	border: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+}
+
+#headerInside nav {
+	width: 900px;
+	height: 50px;
+	background-color: #97455f;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: calc((100% - 900px)/2);
+	display: flex;
+}
+
+#headerInside nav a {
+	line-height: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 0 15px;
+}
+
+#headerInside nav a:hover {
+	background-color: #6a3144;
+}
+
+#headerInside nav a:first-child {
+	background-color: #6a3144;
+	border-top-left-radius: 5px;
+}
+
+
+/*Стили для footer*/
+
+#footer {
+	background-color: #ebebeb;
+	border-top: 5px solid #d2d2d2;
+	margin-top: 50px;
+	padding-top: 29px;
+}
+
+#footer #footerInside {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1.5fr;
+	grid-column-gap: 30px;
+	justify-items: center;
+	padding: 0 20px; 
+}
+
+#footer #footerInside h4 {
+	color:  #333333;
+	font-size: 16px;
+	line-height: 19.2px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#footer #footerInside .item_1 article {
+	display: flex;
+	margin-bottom: 24px;
+}
+
+#footer #footerInside .item_1 .image {
+	width: 95px;
+	height: 95px;
+	padding: 5px;
+	outline: 1px solid #d2d2d2;
+	margin-right: 15px;
+	flex-shrink: 0;
+}
+
+#footer #footerInside .item_1 .image div {
+	width: 95px;
+	background-color:  #333333;
+}
+
+#footer #footerInside .item_1 .image p {
+	color:  #ffffff;
+	font-size: 16px;
+	line-height: 95px;
+	text-align: center;
+}
+
+#footer #footerInside .item_1 .description h4 {
+	color:  #97455f;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+#footer #footerInside .item_1 .description p {
+	color:  #999999;
+	font-size: 12px;
+	line-height: 21.6px;
+	text-align: justify;
+}
+
+#footer #footerInside .item_2 .company_contacts p {
+	color:  #999999;
+	font-size: 12px;
+	line-height: 19.2px;
+	text-align: left;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+#footer #footerInside .item_2 .company_contacts p span {
+	color:  #97455f;
+}
+
+#footer #footerInside .item_3 input, textarea {
+	width: 100%; 
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	color:  #989898;
+	font-size: 13px;
+	line-height: 20.583px;
+	text-align: left;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+#footer #footerInside .item_3 input[type="submit"] {
+	width: 80px;
+	height: 31px;
+	background-color: #97455f;
+	text-align: center;
+	color:  #ffffff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#footer #copyright {
+	height: 60px;
+	border-top: 1px solid #ffffff;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#footer #copyright p {
+	color:  #999999;
+	font-size: 12px;
+	line-height: 14.4px;
+	text-align: left;
+}
+
+/* ---------- КОНЕЦ описания общих стилей для страницы, header, footer -----------*/
+
+/* ---------- НАЧАЛО описания стилей для основного контента СТРАНИЦЫ -----------*/
+
+#contentMain {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#contentMain .photo {
+	margin: 40px 0;
+}
+
+/* #contentMain .photo .slider {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+} */
+
+/* #contentMain .photo .slider .image {
+	width: 16px;
+	height: 15px;
+	background-color: #333333;
+	border-radius: 50%;
+	margin: 5px;
+} */
+
+/* #contentMain .photo .slider .image:last-child {
+	background-color: #ffffff;
+	border: 4px solid #333333;
+	width: 9px;
+	height: 8px;
+} */
+
+@keyframes animat {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	40% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes animat_last {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+#contentMain .photo .animation img:nth-child(1) {
+	animation: animat 50s infinite;
+}
+
+#contentMain .photo .animation img:nth-child(2) {
+	animation: animat 50s infinite;
+	animation-delay: 10s;
+}
+
+#contentMain .photo .animation img:nth-child(3) {
+	animation: animat 50s infinite;
+	animation-delay: 20s;
+}
+
+#contentMain .photo .animation img:nth-child(4) {
+	animation: animat 50s infinite;
+	animation-delay: 30s;
+}
+
+#contentMain .photo .animation img:nth-child(5) {
+	animation: animat_last 10s forwards, animat 50s 40s infinite;
+}  
+
+#contentMain .photo div.animation {
+	position: relative;
+}
+
+#contentMain .photo div.animation:hover img {
+	animation-play-state: paused;
+}
+
+#contentMain .photo .animation img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0; 
+}
+
+#contentMain .photo .animation img:nth-child(5) {
+	opacity: 1;
+}
+
+#contentMain .photo .animation img.plug {
+	position: static;
+	visibility: hidden;
+}
+
+/* #contentMain .photo .image .lorem_ipsum_dolor {
+	width: 455px;
+	height: 115px;
+	background-color: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	padding: 10px 30px;
+	box-sizing: border-box;
+} */
+
+/* #contentMain .photo .image .lorem_ipsum_dolor h2 {
+	font-size: 36px;
+	line-height: 50.4px;
+	color:  #383838;
+	text-align: left;
+} */
+
+/* #contentMain .photo .image .lorem_ipsum_dolor p {
+	font-size: 16px;
+	line-height: 22.4px;
+	color:  #383838;
+	text-align: left;
+} */
+
+/*Секции*/
+
+#contentMain .heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#contentMain h3 {
+	color:  #333333;
+	font-size: 16px;
+	line-height: 19.2px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 5px;
+	flex-shrink: 0;
+}
+
+/*Секция 1*/
+
+#contentMain .section_1 hr {
+	width: 360px;
+	height: 5px;
+	background-color: #ebebeb;
+	border: none;
+}
+
+#contentMain .section_1 .article {
+	margin: 40px 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	justify-items: center;
+	grid-row-gap: 30px;
+}
+
+#contentMain .section_1 article {
+	display: flex;
+}
+
+#contentMain .section_1 .article h4 {
+	color:  #97455f;
+	font-size: 16px;
+	line-height: 22.4px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#contentMain .section_1 .image {
+	width: 64px;
+	height: 64px;
+	background-color: #353535;
+	margin-right: 10px;
+	flex-shrink: 0;
+}
+
+#contentMain .section_1 .image p {
+	color:  #ffffff;
+	font-size: 12px;
+	text-align: center;
+	padding: 11px 0;
+}
+
+#contentMain .section_1 .article .description {
+	width: 200px;
+}
+
+
+#contentMain .section_1 .article .description p {
+	color:  #999999;
+	font-size: 13px;
+	line-height: 18.2px;
+	text-align: justify;
+}
+
+/*Секция 2*/
+
+#contentMain .section_2 .article hr {
+	width: 125px;
+	height: 5px;
+	background-color: #ebebeb;
+	border: none;
+}
+
+#contentMain .section_2 .article {
+	margin: 40px 0;
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	grid-gap: 30px;
+	justify-items: center;
+}
+
+#contentMain .section_2 article.article_1 {
+	display: flex;
+	flex-direction: column;
+}
+
+#contentMain .section_2 .article .article_1 .image_description {
+	display: flex;
+}
+
+#contentMain .section_2 .article .article_1 .image {
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	background-color: #333333;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	flex-shrink: 0;
+}
+
+#contentMain .section_2 .article .article_1 .image p {
+	color:  #ffffff;
+	font-size: 18px;
+	text-align: center;
+	padding: 32.5px 0;
+}
+
+#contentMain .section_2 .article .article_1 .description {
+	width: 250px;
+}
+
+#contentMain .section_2 .article .article_1 .description h4 {
+	color:  #333333;
+	font-size: 16px;
+	line-height: 19.2px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#contentMain .section_2 .article .article_1 .description p {
+	color:  #999999;
+	font-size: 13px;
+	line-height: 18.2px;
+	text-align: justify;
+	margin-bottom: 15px;
+}
+
+#contentMain .section_2 .article .article_1 .description a {
+	text-decoration: none;
+	color:  #97455f;
+	font-size: 13px;
+	line-height: 13px;
+	text-align: left;
+}
+
+#contentMain .section_2 article.article_2 {
+	display: flex;
+	flex-direction: column;
+}
+
+#contentMain .section_2 .article .article_2 .image_heading {
+	display: flex;
+}
+
+#contentMain .section_2 .article .article_2 .image_heading .image {
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+ #contentMain .section_2 .article .article_2 .image_heading .heading {
+	display: block;
+	margin-bottom: 10px;
+} 
+
+#contentMain .section_2 .article .article_2 .image_heading .heading h4 {
+	color:  #333333;
+	font-size: 16px;
+	line-height: 19.2px;
+	text-align: left;
+	margin-bottom: 8px;
+}
+
+#contentMain .section_2 .article .article_2 .image_heading .heading a {
+	text-decoration: none;
+	color:  #97455f;
+	font-size: 13px;
+	line-height: 13px;
+	text-align: left;
+}
+
+#contentMain .section_2 .article .article_2 p {
+	color:  #999999;
+	font-size: 13px;
+	line-height: 18.2px;
+	text-align: justify;
+}
+
+/*Конец Секция 2*/
+
+#contentMain .contact_us_today {
+	max-width: 900px;
+	min-height: 106px;
+	background-color: #97455f;
+	border-radius: 5px;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#contentMain .contact_us_today .text p {
+	color:  #e5e5e5;
+	font-size: 36px;
+	line-height: 43.2px;
+	text-align: left;
+}
+
+#contentMain .contact_us_today .text p:last-child {
+	font-size: 18px;
+	line-height: 21.6px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+#contentMain .contact_us_today div.contact {
+	width: 279px;
+	height: 58px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	margin: 4px 0;
+}
+
+#contentMain .contact_us_today .contact p {
+	color:  #97455f;
+	font-size: 26px;
+	text-align: center;
+	line-height: 58px;
+	text-transform: uppercase;
+}
+
+/* ----------КОНЕЦ описания стилей для основного контента СТРАНИЦЫ-----------*/

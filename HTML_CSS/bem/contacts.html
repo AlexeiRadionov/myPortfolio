@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  href="styles/style.css">
+    <title>Document</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div id="header_content">
+        <header>
+          <div class="b-headerInside">
+            <div class="b-headerInside__logo b-headerInside__logo_position_left">
+              <div class="b-headerInside__image"></div>
+            </div>
+            
+            <form class="b-headerInside__searchForm b-headerInside__searchForm_position_right">
+              <input class="b-headerInside__input" type="text" name="search" placeholder="Search Our Website...">
+              <button class="b-headerInside__button">submit</button>
+            </form>
+            
+            <nav class="b-headerInside__nav">
+              <a class="b-headerInside__link" href="index.html">Главная</a>
+              <a class="b-headerInside__link" href="catalog.html">Каталог</a>
+              <a class="b-headerInside__link" href="#"><span class="b-headerInside__span">Контакты</span></a>
+            </nav>
+          </div>
+        </header>
+        
+        <div id="contentContacts">
+          <div class="form">
+            <form class="b-form">
+              <input class="b-form__input" type="text" name="userName" placeholder="Your name:" required pattern="([A-Za-z]+)">
+              
+              <input class="b-form__input" type="email" name="userEmaile" placeholder="Your email:" required>
+              
+              <textarea class="b-form__textarea" name="message" required placeholder="Your message:" rows="6"></textarea>
+              <input class="b-form__button b-form__button_hover" type="submit" value="SEND">
+            </form>
+          </div>
+          
+          <div class="contacts_social">
+            <div class="b-contacts">
+              <div class="b-contacts__skype">
+                <img class="b-contacts__image" src="images/contacts/skype.png" alt="Фотография">
+                <p class="b-contacts__text">here_your_login_skype</p>
+              </div>
+              <div class="b-contacts__icq">
+                <img class="b-contacts__image" src="images/contacts/icq.png" alt="Фотография">
+                <p class="b-contacts__text">279679659</p>
+              </div>
+              <div class="b-contacts__email">
+                <img class="b-contacts__image" src="images/contacts/email.png" alt="Фотография">
+                <p class="b-contacts__text">psdhtmlcss@mail.ru</p>
+              </div>
+              <div class="b-contacts__phone">
+                <img class="b-contacts__image" src="images/contacts/phone.png" alt="Фотография">
+                <p class="b-contacts__text">80 00 4568 55 55</p>
+              </div>
+            </div>
+            
+            <div class="social">
+              <img src="images/contacts/social.png" alt="Фотография">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="footer">
+        <footer>
+          <div class="b-footerInside">
+            <p class="b-footerInside__copyright">
+              Copyright &copy; All rights reserved, 2018
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

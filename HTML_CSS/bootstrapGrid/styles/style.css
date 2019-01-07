@@ -1,0 +1,46 @@
+@import "blocks/_b-headerInside.css";
+@import "blocks/_b-article.css";
+@import "blocks/_b-articlePreview1.css";
+@import "blocks/_b-section.css";
+@import "blocks/_b-footerInside.css";
+
+ * {
+	margin: 0;
+	padding: 0;
+} 
+
+@font-face {
+	font-family: Georgia;
+	src: url('../fonts/Georgia regular.ttf');
+}
+
+body {
+	font-family: Georgia, sans-serif;
+	font-weight: 400;
+	text-align: left;
+}
+
+hr {
+	background-color:  #3a3a3a;
+	height: 1px;
+	border: none;
+}
+
+.container {                    /*{*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}                               /*Прижимаем футер к низу экрана*/
+
+#header_contentMain {
+	flex: 1;
+	width: 1002px;
+	margin: 0 auto;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+}                               /*}*/
+
+#footer {
+	width: 1002px;
+	margin: 0 auto;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.45">
+	<link href="styles/style.css" rel="stylesheet">
+	<title>Интернет магазин</title>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div id="headerInside">
+				<img src="images/logo.jpg" alt="Фотография">
+				
+				<div id="companyName"> Детский мир </div>
+				
+				<nav id="navWrap">
+					<a href="index.html">Главная</a>
+					<a href="shop.html">Магазин</a>
+					<a href="contacts.html">Контакты</a>
+				</nav>
+			</div>	
+		</header>
+
+		<div id="contentContacts">
+			<div id="contacts_map">
+				<div id="contacts">
+					<p> Наши контакты: </p>
+					<ul>
+						<li> Юридический адрес: <p> Омск, пр. Маркса, дом 7 </p> </li>
+						<li> Телефон справочной службы: <p> 8-800-999-77-77 (круглосуточно) </p> </li>
+						<li> Электронный адрес: <p> detskymir@mail.ru </p> </li>
+					</ul>
+				</div>
+
+				<div id="map">
+					<iframe src="https://yandex.ru/map-widget/v1/-/CBeaU4QPgA"></iframe>
+				</div>
+			</div>
+
+			<div id="message"> 
+				<form>
+				<fieldset>
+					<legend> Напишите нам </legend>
+					<p>Здесь вы можете оставить нам сообщение. Для отправки сообщения заполните поля с вашими данными, введите текст сообщения в текстовое поле и нажмите кнопку: &nbsp; <input class="button" type="submit" value="Отправить"> </p>
+					
+					<div id="user_message">
+						<input type="text" name="userName" required placeholder="Ваше имя"> <input type="text" name="userEmail" required placeholder="Ваш E-mail"> <input type="text" name="theme" required placeholder="Тема сообщения">
+					
+						<textarea name="message" required placeholder="Введите ваше сообщение..." rows="15"></textarea>	
+					</div>
+				</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div id="footerInside">
+			<div>
+				<p>Магазин игрушек "Детский мир." Copyright &copy; 2017</p>
+			</div>
+
+			<div id="social">
+				<a href="https://www.ok.ru" target="_blank"> <img src="images/social/ok.png" alt="Фотография"> </a>
+				<a href="https://www.vk.com" target="_blank"> <img src="images/social/vk.png" alt="Фотография"> </a>
+				<a href="https://www.facebook.com" target="_blank"> <img src="images/social/facebook.png" alt="Фотография"> </a>
+				<a href="https://www.instagram.com" target="_blank"> <img src="images/social/insta.png" alt="Фотография"> </a>
+				<a href="https://www.twitter.com" target="_blank"> <img src="images/social/twitter.png" alt="Фотография"> </a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

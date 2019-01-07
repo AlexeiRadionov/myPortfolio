@@ -1,0 +1,60 @@
+.b-headerInside {
+	background-color: #5e5e5e;
+	height: 120px;
+	text-align: center;
+}
+
+.b-headerInside__logo {
+	background-color: #fff;
+	width: 140px;
+	height: 70px;
+}
+
+.b-headerInside__logo_position_left {
+	float: left;
+	margin: 15px;
+}
+
+.b-headerInside__searchForm {
+	margin: 25px;
+}
+
+.b-headerInside__searchForm_position_right {
+	float: right;
+}
+
+.b-headerInside__input {
+	display: inline-block;
+	border: none;
+	width: 200px;
+	height: 20px;
+	font-size: 16px;
+	position: relative;
+	left: 4px;
+	padding: 0 5px;
+}
+
+.b-headerInside__button {
+	background-color: #8B0000;
+	height: 20px;
+	font-size: 16px;
+	border: none;
+	color: #fff;
+	padding: 0 5px;
+}
+
+.b-headerInside__nav {
+	clear: right;
+	text-align: left;
+}
+
+.b-headerInside__link {
+	text-decoration: none;
+	font-size: 30px;
+	color: black;
+	margin: 0 60px;
+}
+
+.b-headerInside__span {
+	color: yellow;
+}

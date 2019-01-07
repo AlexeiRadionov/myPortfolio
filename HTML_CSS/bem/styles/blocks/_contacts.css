@@ -1,0 +1,23 @@
+.b-contacts__skype, .b-contacts__icq, .b-contacts__phone, .b-contacts__email {
+	display: flex;
+}
+
+.b-contacts__text {
+	color:  #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+/* #footerInside #skype p {
+	margin-top: 4px;
+}
+
+#footerInside #email p {
+	margin-top: -3px;
+} */
+
+.b-contacts__image {
+	margin: 0 5px 20px;
+}

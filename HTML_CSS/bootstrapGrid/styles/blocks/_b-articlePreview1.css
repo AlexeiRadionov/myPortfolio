@@ -1,0 +1,25 @@
+.b-articlePreview1 {
+	padding: 30px 45px;
+	text-align: center;
+}
+
+.b-articlePreview1__heading {
+	color:  #55415f;
+	font-size: 18px;
+	line-height: 32.4px;
+}
+
+.b-articlePreview1__heading_position {
+	margin: 10px;
+}
+
+.b-articlePreview1__text {
+	color:  #807d77;
+	font-size: 13px;
+	line-height: 23.4px;
+	text-align: justify;
+}
+
+.b-articlePreview1__text_position {
+	margin-top: 15px;
+}

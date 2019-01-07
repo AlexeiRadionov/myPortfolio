@@ -1,0 +1,551 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url('../fonts/OpenSans.ttf');
+}
+
+@font-face {
+	font-family: "Huntsman";
+	src: url('../fonts/Huntsman.otf');
+}
+
+html, body {
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	width: 100%;
+	height: 50px;
+	padding: 10px 0;
+	background-color:#00FFFF;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+footer {
+	min-width: 700px;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #5e5e5e;
+	border-top: 1px solid rgba(0, 0, 0, 1);
+}
+
+#container {
+	min-width: 700px;
+	flex: 1;
+}
+
+#navWrap {
+	height: 50px;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 5px;
+}
+
+#navWrap a {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    color: #800080;
+    text-decoration: none;
+    border-left: 1px solid rgba(0, 0, 0, 1);
+    border-right: 1px solid rgba(0, 0, 0, 1);
+    padding: 0 20px;
+    height: 70px;
+    line-height: 70px;
+}
+
+#navWrap a:hover {
+    background: #5F9EA0;
+}
+
+#navWrap a:last-child {
+    border-left: none;
+}
+
+#navWrap a:first-child {
+    border-right: none;
+}
+
+#companyName {
+	font-family: "Huntsman", sans-serif;
+	float: left;
+	margin-left: 10px;
+	font-size: 48px;
+	line-height: 50px;
+	color: #800080;
+}
+
+#headerInside {
+	max-width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+#headerInside img {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 5px;
+}
+
+#footerInside {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#footerInside img {
+	display: block;
+	opacity: 0.6;
+	border: 1px solid rgba(0, 0, 0, 1);
+	margin-right: 5px;
+}
+
+#footerInside img:hover {
+	opacity: 1;
+}
+
+#footerInside p {
+	font-size: 16px;
+	margin-left: 5px;
+}
+
+#social {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* ----------НАЧАЛО описания стилей для ГЛАВНОЙ СТРАНИЦЫ-----------*/
+
+#contentMain {
+	font-family: "Open Sans", sans-serif;
+}
+
+#contentMain h1 {
+	text-align: center;
+	font-size: 70px;
+	color: #0000FF;
+	margin: 0 auto;
+}
+
+#contentMain h2 {
+	font-family: "Huntsman", sans-serif;
+	text-align: center;
+	font-size: 35px;
+	color: #FF0000;
+	margin: 20px auto;
+}
+
+#promo {
+	background: url('../images/promo.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+}
+
+#text {
+	font-size: 20px;
+	margin: 40px 40px;
+	font-family: Roboto, sans-serif;
+	text-align: justify;
+}
+
+/* ----------КОНЕЦ описания стилей для ГЛАВНОЙ СТРАНИЦЫ-----------*/
+
+/* ----------НАЧАЛО описания стилей для страницы С ОТКРЫТЫМ ПРОДУКТОМ-----------*/
+
+#contentGood {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: Roboto, sans-serif;
+}
+
+#contentGood img {
+	width: 100%;
+	outline: 2px solid #008000;
+	position: sticky;
+	top: 64px;
+}
+
+#contentGood img:hover {
+	outline: none;
+}
+
+#contentGood h1 {
+	text-align: center;
+	font-size: 50px;
+	margin: 20px 5px;
+	background: #FFFF00;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+#contentGood hr {
+	margin: 0 5px;
+	background: #000000;
+	height: 1px;
+	border: none;
+	position: sticky;
+	top: 58px;
+	z-index: 10;
+}
+
+#contentGood h2 {
+	font-size: 30px;
+	text-align: center;
+	background: #00FF00;
+	margin: 0;
+}
+
+#photo_description {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 5px;
+}
+
+#photo {
+	width: 33%;
+	padding: 2px;
+}
+
+#description {
+	width: 64%;
+}
+
+#description p {
+	text-indent: 20px;
+}
+
+#description p::first-letter {
+	font-family: "Huntsman", sans-serif;
+	font-size: 30px;
+	color: red;
+}
+
+#description ol {
+	list-style-image: url('../images/marker.png');
+	margin: 0;
+}
+
+#description li {
+	margin-bottom: 10px;
+}
+
+#description li::first-letter {
+	font-family: "Huntsman", sans-serif;
+	font-size: 30px;
+	color: red;
+}
+
+#description table {
+	width: 100%;
+	border: 1px solid;
+	border-collapse: collapse;
+	margin: 30px 0;
+	text-align: center;
+}
+
+#description caption {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	background: #00FF00;
+}
+
+#description th {
+	height: 45px;
+	font-size: 22px;
+	border: 1px solid;
+}
+
+#description td {
+	font-size: 18px;
+	border: 1px solid;
+	vertical-align: bottom;
+}
+
+#description td[rowspan] {
+	vertical-align: middle;
+	font-size: 22px;
+}
+
+#description tr {
+	height: 35px;
+}
+
+.text {
+	font-style: italic;
+	font-size: 20px;
+	margin: 30px 0;
+	text-align: justify;
+}
+
+#price {
+	font-size: 50px;
+	font-family: "Huntsman", sans-serif;
+	text-align: center;
+}
+
+#buy {
+	width: 315px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#buy input {
+	display: inline-block;
+	border: 1px solid #000;
+	margin-top: 20px;
+	padding: 29px;
+	font-size: 23px;
+	font-style: oblique;
+	background-color: #A9A9A9;
+}
+
+#buy input:hover {
+	background-color: #808080;
+	cursor: pointer;
+}
+
+#buy input:active {
+	color: red;
+}
+
+#buy button {
+	display: inline-block;
+	border: 1px solid #000;
+	margin-top: 20px;
+	padding: 20px;
+	font-size: 20px;
+	font-style: oblique;
+	background-color: #A9A9A9;
+}
+
+#buy button:hover {
+	background-color: #808080;
+	cursor: pointer;
+}
+
+#buy button:active {
+	color: red;
+}
+
+/* ----------КОНЕЦ описания стилей для страницы С ОТКРЫТЫМ ПРОДУКТОМ-----------*/
+
+/* ----------НАЧАЛО описания стилей для страницы С МАГАЗИНОМ-----------*/
+
+#contentShop {
+	font-family: "Open Sans", sans-serif;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.catalog_goods {
+	margin: 20px 5px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#contentShop h1 {
+	text-align: center;
+	color: #5e5e5e;
+	font-size: 50px;
+	margin: 20px 22px;
+}
+
+p.name {
+	font-size: 30px;
+	margin: 10px 0;
+	text-align: center;
+}
+
+#contentShop img {
+	width: 100%;
+}
+
+.nav {
+	margin: 0 22px;
+	font-size: 18px;
+}
+
+a.nav {
+	margin: 0;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+span.nav {
+	margin: 0;
+	background-color: #FFFF00;
+	font-weight: 500;
+}
+
+a.link {
+	text-decoration: none;
+	color: #e6e09a;
+	background-color: #696969;
+	font-size: 22px;
+	padding: 5px 15px;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+
+a.link:hover {
+	color: #fff;
+	background: #777777;
+}
+
+.shop_text {
+	width: 100%;
+	height: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	margin: 20px 0;
+	text-align: justify;
+}
+
+.good {
+	color: #5e5e5e;
+	width: 350px;
+	padding: 5px;
+	margin-bottom: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.shop_price {
+	font-size: 25px;
+	color: #000000;
+	text-align: right;
+	font-weight: bold;
+}
+
+/* ----------КОНЕЦ описания стилей для страницы С МАГАЗИНОМ-----------*/
+
+/* ----------НАЧАЛО описания стилей для страницы С КОНТАКТАМИ-----------*/
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+textarea {
+	display: block;
+	width: 90%;
+	padding: 5px;
+	margin: 20px 0;
+	font-size: 18px;
+	font-style: oblique;
+	color: #0000FF;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+	padding: 0;
+	margin: 0;
+}
+
+legend {
+	color: #5e5e5e;
+	padding: 0;
+	margin-left: 20px;
+}
+
+#contentContacts {
+	max-width: 1200px;
+	margin: 30px auto;
+}
+
+#contentContacts p {
+	font-size: 20px;
+}
+
+#contacts_map {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 5px;
+}
+
+#contacts {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+	color: #0000FF;
+	width: 26%; 
+	padding: 20px;
+}
+
+#contacts p {
+	font-style: italic;
+	font-weight: 500;
+	color: #000000;
+	text-align: left;
+	margin: 10px 0;
+}
+
+#contacts ul {
+	padding-left: 15px;
+}
+
+#map {
+	width: 67%;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#message {
+	margin: 30px 5px 0;
+}
+
+#message p {
+	margin: 20px;
+}
+
+#message input[type="text"] {
+	display: block;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	width: 23%;
+	padding: 0 5px;
+	font-size: 20px;
+	font-style: oblique;
+	text-transform: capitalize;
+}
+
+#message input[name="userEmail"] {
+	text-transform: none;
+}
+
+#message input[name="userEmail"]:focus {
+	color: #0000FF;
+	background-color: #ADFF2F;
+}
+
+#user_message {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.button {
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	padding: 0 20px;
+	font-size: 20px;
+	font-style: oblique;
+}
+
+.button:hover {
+	background: #40E0D0;
+	cursor: pointer;
+}
+
+/* ----------КОНЕЦ описания стилей для страницы С КОНТАКТАМИ-----------*/

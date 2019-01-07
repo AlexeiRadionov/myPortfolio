@@ -1,0 +1,16 @@
+.b-section2 {
+	background-color: #A9A9A9;
+	padding: 20px;
+}
+
+.b-section2__heading {
+	font-size: 28px;
+	text-align: left;
+	color: black;
+	margin: 20px 0;
+}
+
+.b-section2__text {
+	font-size: 20px;
+	text-align: justify;
+}

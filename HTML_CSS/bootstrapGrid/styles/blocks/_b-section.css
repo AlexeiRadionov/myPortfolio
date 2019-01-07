@@ -1,0 +1,43 @@
+.b-section {
+	padding: 0 25px;
+}
+
+.b-section__heading {
+	color:  #222222;
+	font-size: 18px;
+	line-height: 28.8px;
+	text-align: center;
+	padding: 0 20px;
+}
+
+ .b-section__article {
+	padding-left: 10px;
+	padding-right: 10px;
+} 
+
+.b-section__article-heading {
+	color:  #7f7d77;
+	font-size: 18px;
+	line-height: 21.6px;
+	padding: 15px 0;
+}
+
+.b-section__description {
+	color:  #807d77;
+	font-size: 13px;
+	line-height: 20.8px;
+	text-align: justify;
+	padding: 15px 0;
+}
+
+.b-section__link {
+	color:  #55415f;
+	font-size: 13px;
+	line-height: 15.6px;
+	text-decoration: none;
+}
+
+.b-section__link_margin {
+	margin-bottom: 40px;
+	display: inline-block;
+}

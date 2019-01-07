@@ -1,0 +1,589 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+/*Стили для header*/
+
+ #headerInside {
+	height: 600px;
+} 
+
+#headerInside video {
+	object-fit: cover;
+	height: 100%;
+}
+
+#headerInside #productName {
+	margin: 0;
+	left: calc((100% - 440px)/2);
+}
+
+#headerInside #image {
+	width: 60%;
+	margin: 0;
+	top: 280px;
+	right: calc((100% - 60%)/2);
+	
+}
+
+#headerInside h1 {
+	margin: 15px 0;
+	letter-spacing: 2px;
+}
+
+#headerInside ul {
+	text-align: center;
+	margin: 0;
+}
+
+#headerInside li {
+	letter-spacing: 1px;
+}
+
+/*Стили для footer*/
+
+footer {
+	margin: 30px auto 0;
+}
+
+#background {
+	padding: 45px 0 15px;
+}
+
+#footerInside #form {
+	margin: 0;
+}
+
+#footerInside textarea, input {
+	width: 480px;
+}
+
+#contacts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#skype, #icq, #phone, #email {
+	align-items: center;
+	margin: 0 5px;
+}
+
+#footerInside #contacts p {
+	margin: 0;
+}
+
+#footerInside #social {
+	margin: 10px 0;
+	text-align: center;
+}
+
+#footerInside #social img {
+	margin: 0;
+}
+
+/*1 секция*/
+
+#contentProduct section.section_1 {
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+}
+
+#contentProduct .section_1 .description {
+	width: 80%;
+}
+
+#contentProduct .section_1 h2 {
+	margin: 20px 0;
+}
+
+#contentProduct .section_1 .video {
+	width: 80%;
+	margin-top: 15px;
+}
+
+/*2 секция*/
+
+#contentProduct section.section_2 {
+	padding: 0;
+	margin-top: 30px;
+}
+
+#contentProduct .section_2 .description {
+	justify-content: space-between;
+}
+
+/*3 секция*/
+
+#contentProduct section.section_3 {
+	margin: 0;
+}
+
+#contentProduct .section_3 h2 {
+	margin: 20px 0;
+}
+
+#contentProduct .section_3 .scrinshots {
+	justify-content: center;
+}
+
+#contentProduct .section_3 .description {
+	width: 65%;
+}
+
+#contentProduct .section_3 article {
+	width: 90%;
+}
+
+#contentProduct .section_3 article:nth-child(2n+1) {
+	margin-right: 0;
+}
+
+/*4 секция*/
+
+#contentProduct section.section_4 {
+	margin-top: 15px;
+	padding: 20px 0 0;
+}
+
+#contentProduct .section_4 h2 {
+	margin-bottom: 20px;
+}
+
+#contentProduct .section_4 .reviews {
+	justify-content: center;
+}
+
+#contentProduct .section_4 .description {
+	width: 65%;
+}
+
+#contentProduct .section_4 .review {
+	width: 90%;
+	margin-bottom: 24px;
+	justify-content: center;
+}
+
+#contentProduct .section_4 .review:nth-child(2n+1) {
+	margin-right: 0;
+}
+
+/*5 секция*/
+
+#contentProduct section.section_5 {
+	margin: 0;
+}
+
+#contentProduct .section_5 h2 {
+	margin-top: 20px;
+}
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+/*Стили для header*/
+
+#headerInside {
+	height: 520px;
+} 
+
+#headerInside video {
+	object-fit: cover;
+	height: 100%;
+}
+
+#headerInside #productName {
+	margin: 0;
+	left: calc((100% - 440px)/2);
+}
+
+#headerInside #image {
+	width: 60%;
+	margin: 0;
+	top: 260px;
+	right: calc((100% - 60%)/2);
+}
+
+#headerInside h1 {
+	margin: 15px 0;
+}
+
+#headerInside ul {
+	text-align: center;
+	margin: 0;
+	list-style: none;
+}
+
+/*Стили для footer*/
+
+#background {
+	padding: 45px 0 15px;
+}
+
+#footerInside #form {
+	margin: 0;
+}
+
+#footerInside textarea, input {
+	width: 400px;
+}
+
+#contacts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#skype, #icq, #phone, #email {
+	align-items: flex-start;
+	margin: 0 5px;
+}
+
+#footerInside #contacts p {
+	margin: 0;
+}
+
+#footerInside #social {
+	margin: 10px 0;
+	text-align: center;
+}
+
+#footerInside #social img {
+	margin: 0;
+}
+
+/*1 секция*/
+
+#contentProduct section.section_1 {
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+}
+
+#contentProduct .section_1 .description {
+	width: 80%;
+}
+
+#contentProduct .section_1 h2 {
+	margin: 20px 0;
+}
+
+#contentProduct .section_1 .video {
+	width: 80%;
+	margin-top: 15px;
+}
+
+/*2 секция*/
+
+#contentProduct section.section_2 {
+	padding: 0;
+	margin-top: 30px;
+}
+
+#contentProduct .section_2 .item {
+	width: 80%;
+}
+
+#contentProduct .section_2 .item:nth-child(2n+1) {
+	margin-right: 0;
+}
+
+#contentProduct .section_2 .description {
+	justify-content: center;
+}
+
+/*3 секция*/
+
+#contentProduct section.section_3 {
+	margin: 0;
+}
+
+#contentProduct .section_3 h2 {
+	margin: 20px 0;
+}
+
+#contentProduct .section_3 h3 {
+	margin-top: 20px;
+}
+
+#contentProduct .section_3 .scrinshots {
+	justify-content: center;
+}
+
+#contentProduct .section_3 .image {
+	width: 300px;
+	height: 225px;
+	margin: 0;
+}
+
+#contentProduct .section_3 .description {
+	width: 90%;
+}
+
+#contentProduct .section_3 article {
+	width: 90%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#contentProduct .section_3 article:nth-child(2n+1) {
+	margin-right: 0;
+}
+
+/*4 секция*/
+
+#contentProduct section.section_4 {
+	margin-top: 15px;
+	padding: 20px 0 0;
+}
+
+#contentProduct .section_4 h2 {
+	margin-bottom: 20px;
+}
+
+#contentProduct .section_4 .reviews {
+	justify-content: center;
+}
+
+#contentProduct .section_4 .description {
+	width: 65%;
+}
+
+#contentProduct .section_4 .review {
+	width: 90%;
+	margin-bottom: 24px;
+	justify-content: center;
+}
+
+#contentProduct .section_4 .review:nth-child(2n+1) {
+	margin-right: 0;
+}
+
+/*5 секция*/
+
+#contentProduct section.section_5 {
+	margin: 0;
+}
+
+#contentProduct .section_5 h2 {
+	margin-top: 20px;
+}
+
+}
+
+@media screen and (max-width: 479px) {
+
+/*Стили для header*/
+
+#headerInside {
+	height: 300px;
+} 
+
+#headerInside video {
+	object-fit: cover;
+	height: 100%;
+}
+
+#headerInside #productName {
+	width: 90%;
+	margin: 0;
+	left: calc((100% - 90%)/2);
+}
+
+#headerInside #image {
+	display: none;
+}
+
+#headerInside h1 {
+	margin: 15px 0;
+	font-size: 40px;
+}
+
+#headerInside ul {
+	text-align: center;
+	margin: 0;
+	list-style: none;
+	font-size: 15px;
+}
+
+/*Стили для footer*/
+
+footer {
+	margin: 30px auto 0;
+}
+
+#background {
+	padding: 45px 0 15px;
+}
+
+#footerInside #form {
+	margin: 0;
+}
+
+#footerInside textarea, input {
+	width: 250px;
+}
+
+#contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+
+#skype, #icq, #phone, #email {
+	margin: 0 5px;
+}
+
+#footerInside #contacts p {
+	margin: 0;
+}
+
+#footerInside #social {
+	margin: 10px 0;
+	text-align: center;
+}
+
+#footerInside #social img {
+	margin: 0;
+}
+
+/*1 секция*/
+
+#contentProduct section.section_1 {
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+}
+
+#contentProduct .section_1 h2 {
+	margin: 20px 0;
+}
+
+#contentProduct .section_1 .description {
+	width: 80%;
+}
+
+#contentProduct .section_1 h2 {
+	margin: 20px 0;
+}
+
+#contentProduct .section_1 .video {
+	width: 80%;
+	margin-top: 15px;
+}
+
+/*2 секция*/
+
+#contentProduct section.section_2 {
+	padding: 0;
+	margin-top: 30px;
+}
+
+#contentProduct .section_2 .item {
+	width: 80%;
+}
+
+#contentProduct .section_2 .item:nth-child(2n+1) {
+	margin-right: 0;
+}
+
+#contentProduct .section_2 .description {
+	justify-content: center;
+}
+
+/*3 секция*/
+
+#contentProduct section.section_3 {
+	margin: 0;
+}
+
+#contentProduct .section_3 h2 {
+	margin: 20px 0;
+}
+
+#contentProduct .section_3 h3 {
+	margin-top: 20px;
+}
+
+#contentProduct .section_3 .scrinshots {
+	justify-content: center;
+}
+
+#contentProduct .section_3 .image {
+	width: 200px;
+	height: 150px;
+	margin: 0;
+}
+
+#contentProduct .section_3 .description {
+	width: 90%;
+}
+
+#contentProduct .section_3 article {
+	width: 90%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#contentProduct .section_3 article:nth-child(2n+1) {
+	margin-right: 0;
+}
+
+/*4 секция*/
+
+#contentProduct section.section_4 {
+	margin-top: 15px;
+	padding: 20px 0 0;
+}
+
+#contentProduct .section_4 h2 {
+	margin-bottom: 20px;
+}
+
+#contentProduct .section_4 .reviews {
+	justify-content: center;
+}
+
+#contentProduct .section_4 .description {
+	width: 65%;
+	margin-left: 10px;
+}
+
+#contentProduct .section_4 .description::after {
+	display: none;
+}
+
+#contentProduct .section_4 .review {
+	width: 90%;
+	margin-bottom: 24px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#contentProduct .section_4 .review:nth-child(2n+1) {
+	margin-right: 0;
+}
+
+/*5 секция*/
+
+#contentProduct section.section_5 {
+	margin: 0;
+}
+
+#contentProduct .section_5 h2 {
+	margin-top: 20px;
+}
+
+#contentProduct .section_5 article {
+	width: 280px;
+	margin: 25px 0 0;
+}
+
+#contentProduct .section_5 button {
+	width: 240px;
+}
+
+}

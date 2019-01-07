@@ -1,0 +1,52 @@
+@import "blocks/_headerInside.css";
+@import "blocks/_section1.css";
+@import "blocks/_article.css";
+@import "blocks/_section2.css";
+@import "blocks/_footerInside.css";
+@import "blocks/_good.css";
+@import "blocks/_form.css";
+@import "blocks/_contacts.css";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {                    /*{*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 0 5px;
+	margin: 0 auto;
+	width: 1100px;
+}                               /*Прижимаем футер к низу экрана*/
+
+#header_content {
+	flex: 1;
+}                               /*}*/
+
+#header_content #contentCatalog h1 {
+	font-size: 40px;
+	text-align: center;
+	margin: 30px 0;
+	color: #A9A9A9;
+}
+
+#header_content #contentCatalog .goods {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#header_content #contentCatalog .goods .good {
+	margin-bottom: 30px;
+}
+
+#header_content #contentContacts {
+	margin: 30px auto;
+	padding: 40px;
+	background-color: #A9A9A9;
+	display: flex;
+	justify-content: space-around;
+}
+

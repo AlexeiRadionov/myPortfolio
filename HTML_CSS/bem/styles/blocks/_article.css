@@ -1,0 +1,35 @@
+.b-article {
+	background-color: yellow;
+}
+
+.b-article::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.b-article__article {
+	padding: 0 10px;
+	width: 45%;
+	height: 150px;
+}
+
+.b-article__article_position_left {
+	float: left;
+}
+
+.b-article__article_position_right {
+	float: right;
+}
+
+.b-article__heading {
+	font-size: 20px;
+	color: green;
+	margin: 15px 0;
+	text-align: left;
+}
+
+.b-article__description {
+	font-size: 16px;
+	text-align: justify;
+}
