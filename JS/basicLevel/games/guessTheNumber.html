@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<script>
+	
+	var answer = parseInt(Math.random() * 100);
+	var n;    // Количество попыток.
+	var userNum = 1;
+
+	for (n = 1; n <= 5; n++) {
+		
+		var userAnswer = prompt("Игрок " + userNum + " введите число от 0 до 100, для выхода нажмите q");
+		if (userAnswer == "q") {
+			break;
+		}
+
+		userAnswer = parseInt(userAnswer);
+
+		if (userAnswer < 0) {
+			alert("Необходимо ввести положительное число");
+			n = n - 1;
+			continue;
+		}	else if (userAnswer > answer) {
+			alert("Вы использовали попытку: " + n + ". Ваш ответ слишком большой");
+		} else if (userAnswer < answer) {
+			alert("Вы использовали попытку: " + n + ". Ваш ответ слишком маленький");
+		} else if (userAnswer == answer) {
+			alert("Вы использовали попытку: " + n + ". Вы угадали! Победил игрок: " + userNum);
+			break;
+		} else {
+			alert("Необходимо ввести число");
+			n = n - 1;
+			continue;		
+		}
+		
+		if (userNum == 1) {
+			userNum = 2;
+			n = n - 1;
+		} else {
+			userNum = 1;	
+		}
+		
+		if (n == 5) {
+			alert("Вы использовали все попытки. Игра окончена.");
+		} 
+	}
+			
+</script>

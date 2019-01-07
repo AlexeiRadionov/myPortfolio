@@ -1,0 +1,22 @@
+<meta charset = "utf-8">
+<script>
+
+	var score = 0;
+
+	function askQuestion(question, answer) {
+		var userAnswer = prompt(question).toLowerCase();
+		if (userAnswer == answer) {
+			alert("Правильно!");
+			score = score + 1;
+		} else {
+			alert("Неверно.");
+		}
+	}
+
+	askQuestion("В каком году Гагарин полетел в космос?", 1961);
+	askQuestion("Какой цвет у запрещающего сигнала светофора?", "красный");
+	askQuestion("Динозавры вымерли?", "да");
+
+	alert("Правильных ответов: " + score);
+
+</script>

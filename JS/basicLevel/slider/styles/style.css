@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {                   
+	width: 900px;
+	min-height: 100vh;
+	margin: 0 auto;
+	background-color: gray;
+	overflow: auto;
+}
+
+#container #slider {
+	width: 400px;
+	height: 400px;
+	margin: 20px auto;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+
+#container #slider img {
+	width: 100%;
+}
+
+#container button {
+	display: inline-block;
+	width: 70px;
+	height: 35px;
+	cursor: pointer;
+}
+
+#container #back {
+	margin-left: 350px;
+	margin-right: 28px;
+}
+
+#container #forward {
+	margin-right: 350px;
+	margin-left: 28px;
+}

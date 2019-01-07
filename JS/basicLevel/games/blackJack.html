@@ -1,0 +1,128 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	function getCard() {
+		var cards = ['6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+		return cards[getRandomInt(0, cards.length - 1)];
+	}
+
+	function getSum(arr) {
+		var sum = 0;
+
+		// сначала считаем все карты кроме тузов
+		for (var i = 0; i < arr.length; i++) {
+			var score = arr[i];
+			
+			if (score != 'A') {
+				if (arr[i] == 'J' || arr[i] == 'Q' || arr[i] == 'K') {
+				sum = sum + 10;
+				} else {
+				sum = sum + parseInt(score);
+				}
+			}
+		}
+
+		// туз считается как 1, если текущая сумма > 10, иначе - как 11
+		for (var i = 0; i < arr.length; i++) {
+			var score = arr[i];
+			
+			if (score == 'A') {
+				if (sum > 10) {
+					sum = sum + 1;
+				} else {
+					var score1 = 11;
+					sum = sum + score1;
+				}
+			}
+
+			if (sum > 21 && score1 == 11) {
+				sum = sum - 10;
+			}
+		}
+
+		return sum;
+	}
+
+	function getStatus() {
+		return ("Карты у дилера: " + dealer.join(' ') +
+		"\nКарты у игрока: " + player.join(', '));
+	}
+
+	function getSumDealer() {
+		while (getSum(dealer) < 17) {
+			dealer.push(getCard());
+		}
+			if (getSum(dealer) > 21) {
+				depositPlayer = depositPlayer + 200;
+				alert("У дилера перебор, вы выиграли!!! " + getStatus() +
+					"\nВаш выигрыш 100 рублей, сумма депозита: " + depositPlayer);
+			} else if (getSum(dealer) == getSum(player)) {
+				depositPlayer = depositPlayer + 100;
+				alert("Ничья. " + getStatus() +
+					"\nСумма депозита: " + depositPlayer);
+			} else if (getSum(dealer) > getSum(player)) {
+				alert("Вы проиграли. " + getStatus() +
+					"\nСумма депозита: " + depositPlayer);
+			} else {
+				depositPlayer = depositPlayer + 200;
+				alert("Вы выиграли!!! " + getStatus() +
+					"\nВаш выигрыш 100 рублей, сумма депозита: " + depositPlayer);
+			}
+	}
+
+	var depositPlayer = 1000;
+	var answer;
+
+	alert("Предлагаем вам сыграть в игру Black Jack. Ваш депозит равен 1000 рублей." +
+		"\nСтавка на игру равна 100 рублей.");
+
+	while (depositPlayer >= 100) {
+		if (depositPlayer >= 100) {
+			var game = prompt("Для выхода нажмите 1, чтобы продолжить - другое.");
+			if (game != 1) {
+				depositPlayer = depositPlayer - 100;
+				var dealer = [getCard()];
+				var player = [getCard(), getCard()];
+
+				if (getSum(player) == 21) {
+					depositPlayer = depositPlayer + 200;
+					alert(getStatus() + " У вас Black Jack на раздаче, вы выиграли!!!" +
+						"\nВаш выигрыш 100 рублей, сумма депозита: " + depositPlayer);
+				} else {
+					do {
+						if (getSum(player) > 21) {
+							alert(getStatus() + "\nКоличество очков у игрока: " + getSum(player) +
+								"\nПеребор, вы проиграли, сумма депозита: " + depositPlayer);
+							break;
+						} else if (getSum(player) == 21 && answer == '1') {
+							getSumDealer();
+							break;
+						}	
+							
+						answer = prompt(getStatus() + ". Хотите ещё карту? Если да, введите 1, иначе - другое.");
+
+						if (answer == '1') {
+							player.push(getCard());
+							alert(getStatus());
+						} else {
+							getSumDealer();
+							break;
+						}
+					} while (answer == '1');
+				}
+			} else {
+				alert("Игра окончена.");
+				break;
+			}
+		} else {
+			alert("К сожалению у вас закончились деньги." +
+			"\nЕсли хотите сыграть ещё, обновите страницу.");
+		}	
+	} 
+	
+</script>

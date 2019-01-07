@@ -1,0 +1,31 @@
+{
+	"comments": [
+		{
+			"id_comment": 1,
+			"text": "Текст отзыва 1",
+			"submit": 0
+		},
+		{
+			"id_comment": 2,
+			"text": "Текст отзыва 2",
+			"submit": 0
+		},
+		{
+			"id_comment": 3,
+			"text": "Текст отзыва 3",
+			"submit": 0
+		},
+		{
+			"id_comment": 4,
+			"text": "Текст отзыва 4",
+			"submit": 0
+		},
+		{
+			"id_comment": 5,
+			"text": "Текст отзыва 5",
+			"submit": 0
+		}
+	],
+
+	"result": 1
+}

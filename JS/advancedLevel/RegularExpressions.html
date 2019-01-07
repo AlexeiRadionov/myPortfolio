@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<h3>Заменить в тексте одинарные кавычки на двойные. При этом сохранить конструкции типа can't без изменений.</h3>
+		<p>Исходный текст:</p>
+		<p>'Isn't this game really cool?' - he asked. She said: 'Well it's so hard and I can't pass the first level!'</p>
+		<p>Редактированный текст:</p>
+
+		<script>
+			var pattern, result, text;
+
+			text = "'Isn't this game really cool?' - he asked. \nShe said: 'Well it's so hard and I can't pass the first level!'";
+			pattern = /(^|\W)'|'(\W|$)/g;
+			result = text.replace(pattern, '$1"$2');
+			document.write(result);
+			console.log(result);
+		</script>
+	</body>
+</html>
+

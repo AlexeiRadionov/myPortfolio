@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reviews</title>
+	<style>
+		input {
+			display: block;
+			cursor: pointer;
+			margin: 20px 0;
+		}
+		button {
+			cursor: pointer;
+			margin-right: 20px;
+		}
+	</style>
+</head>
+<body>
+	<textarea class="review" name="review" placeholder="Оставьте ваш отзыв" rows="10" cols="100"></textarea>
+	<input class="btn-addReview" type="submit" value="Отправить">
+
+	<button class="btn-listReviews">Показать отзывы</button>
+	<button class="btn-hideReviews">Скрыть отзывы</button>
+	<button class="btn-clear">Сбросить по умолчанию</button>
+
+	<div class="reviews"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="review.js"></script>
+</body>
+</html>

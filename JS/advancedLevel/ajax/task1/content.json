@@ -1,0 +1,31 @@
+{
+	"img1": {
+		"small": "/images/small/1.png",
+		"big": "/images/big/1.png"
+	},
+
+	"img2": {
+		"small": "/images/small/2.png",
+		"big": "/images/big/2.png"
+	},
+
+	"img3": {
+		"small": "/images/small/3.png",
+		"big": "/images/big/3.png"
+	},
+
+	"img4": {
+		"small": "/images/small/4.png",
+		"big": "/images/big/4.png"
+	},
+
+	"img5": {
+		"small": "/images/small/5.png",
+		"big": "/images/big/5.png"
+	},
+
+	"img6": {
+		"small": "/images/small/6.png",
+		"big": "/images/big/6.png"
+	}
+}

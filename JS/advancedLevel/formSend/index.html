@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<title>Document</title>
+</head>
+<style>
+	#button {
+		display: none;
+	}
+</style>
+<body>
+	<form id="form" method="post">
+		<p>Имя содержит только буквы</p>
+		<input type="text" id="name" class="form" placeholder="Name">
+		<p>Дата рождения</p>
+		<input type="text" id="date" class="form" placeholder="Birthday">
+		<p>Телефон в формате +7(000)000-0000</p>
+		<input type="tel" id="phone" class="form" placeholder="Phone">
+		<p>E-mail в формате mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</p>
+		<input type="text" id="email" class="form" placeholder="E-mail">
+		<p>Город</p>
+		<input type="text" id="city" class="form" placeholder="City" autocomplete="off">
+		<p>Текст произвольный</p>
+		<input type="text" id="text" class="form" placeholder="Text"><br><br>
+		<input type="submit" id="button">
+	</form>
+	<button onclick="sendForm()" id="checkForm">Отправить</button>
+
+	<div id="message" title="Send form"></div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
