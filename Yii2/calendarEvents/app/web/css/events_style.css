@@ -1,0 +1,41 @@
+.table .cellWithEvent {
+	background: #FFFF00;
+}
+
+.prev {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
+.table .currentDay {
+	vertical-align: top;
+	border: 3px solid red;
+}
+
+.table .otherDay {
+	vertical-align: top;
+}
+
+th {
+	font-size: 18px;
+	text-align: center;
+}
+
+th:nth-child(7n), th:nth-child(6n) {
+	color: red;
+}
+
+td {
+	font-weight: bold;
+}
+
+td:nth-child(7n), td:nth-child(6n) {
+	color: red;
+}
+
+li {
+	list-style-type: none;
+}
