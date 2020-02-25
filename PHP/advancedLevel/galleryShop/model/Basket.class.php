@@ -12,7 +12,7 @@
 		}
 
 		public function getSumProduct() {
-		    $sum = '';
+		    $sum = 0;
 		    $basket = $this -> getBasket();
 		    if (is_array($basket)) {
 		        foreach ($basket as $value) {
