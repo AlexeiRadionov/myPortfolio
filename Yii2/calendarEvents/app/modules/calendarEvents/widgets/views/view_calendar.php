@@ -2,9 +2,17 @@
     use yii\helpers\Html;
 
     $first = $date->modify('first day of this month');
-    $firstDay = ($first->format('w') + 7) % 7;
+    if ($first->format('w') > 0) {
+        $firstDay = ($first->format('w') + 7) % 7;
+    } else {
+        $firstDay = 7;
+    }
+    
     $totalDay = $first->format('t');
     $cellCount = ($firstDay + $totalDay + (7 - (($firstDay + $totalDay) % 7)));
+    if (($cellCount - ($totalDay + $firstDay - 1)) >= 7) {
+        $cellCount -= 7;
+    }
     
     $eventsMonth = [];
     
